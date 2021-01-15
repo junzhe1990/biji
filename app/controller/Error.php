@@ -5,9 +5,8 @@ declare(strict_types=1);
 namespace app\controller;
 
 use think\Request;
-use app\BaseController;
 
-class Index extends BaseController
+class Error
 {
     /**
      * 显示资源列表
@@ -17,7 +16,7 @@ class Index extends BaseController
     public function index()
     {
         //
-        return 'hello world';
+        return 'error' . '<a href="/">返回首页</a>';
     }
 
     /**
